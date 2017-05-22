@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Oefening_10.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="PaginaLayout.css" rel="stylesheet" />   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            left: 0px;
+            top: 150px;
+            width: 14%;
+        }
+    </style>
+</head>
+<body>
+    <form id="new1" runat="server">
+        <div  id="Kop" class="col-m-12 col-12 ">
+            <h2>Films en nog eens films</h2>
+        </div>
+        <div class="row">
+      <div id="Menu" class="col-m-12 col-3 Menu"><h4>Het Menu</h4>
+          <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        </div>
+    <div id="Inhoud" class="col-9 col-m-12 Inhoud">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>
+    </form>
+</body>
+</html>
