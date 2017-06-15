@@ -2,6 +2,7 @@
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
     <siteMapNode url="~/Home.aspx" title="Home"  description="Welkom">
         <siteMapNode url="~/Main.aspx" title="Main"  description="" />
+        <siteMapNode url="~/users.aspx" title="Gebruikers"  description="" />
       <siteMapNode url="" title="Bewerken" description="">
         <siteMapNode url="~/PasAanFilm.aspx" title="Aanpassen"  description="" />
         <siteMapNode url="~/VoegToeFilm.aspx" title="Toevoegen"  description="" />
