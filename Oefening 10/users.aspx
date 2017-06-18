@@ -4,7 +4,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h2>Gebruikers</h2>
     <h2>
-        <asp:ListBox ID="lbUsers" runat="server" OnSelectedIndexChanged="lbUsers_SelectedIndexChanged" Height="171px" Width="192px"></asp:ListBox>
+        <asp:ListBox ID="lbUsers" runat="server" OnSelectedIndexChanged="lbUsers_SelectedIndexChanged" Height="171px" Width="192px" AutoPostBack="True">
+            <asp:ListItem Value="Wesley931">testval</asp:ListItem>
+        </asp:ListBox>
     </h2>
     <p>
         &nbsp;</p>
@@ -30,7 +32,7 @@
     </p>
     <p>
         <asp:Button ID="btnAdd" runat="server" Text="Toevoegen" OnClick="btnAdd_Click" />
-        <asp:Button ID="btnEdit" runat="server" Text="Aanpassen" />
-        <asp:Button ID="btnDel" runat="server" Text="Verwijderen" />
+        <asp:Button ID="btnEdit" runat="server" Text="Aanpassen" OnClick="btnEdit_Click" />
+        <asp:Button ID="btnDel" runat="server" Text="Verwijderen" OnClick="btnDel_Click" />
     </p>
 </asp:Content>
